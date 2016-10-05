@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://imgur.com/a/ba2aj?reg' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://imgur.com/FCBXbd2/tuduWalkThrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [Mobizen](https://www.mobizen.com/?locale=en).
 
@@ -41,8 +41,8 @@ GIF created with [Mobizen](https://www.mobizen.com/?locale=en).
 
 Describe any challenges encountered while building the app.
 
-* [ ] Redesign the UX/UI of the app
-* [ ] Everything else
+* [x] Redesign the UX/UI of the app
+* [x] Everything else
 
 ## License
 
