@@ -32,6 +32,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
+NOTE: The first part of the gif, the code operates when I click Go.
 
 <img src='https://github.com/ethanTran1359/TUDULIST/blob/master/tuduWalkThrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
