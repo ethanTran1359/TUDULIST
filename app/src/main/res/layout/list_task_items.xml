@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:srcCompat="?attr/actionModeBackground"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignStart="@+id/listTaskAct_ImportantImg"-->
+        <!--android:layout_alignTop="@id/listTaskAct_ImportantImg"-->
+        <!--android:layout_alignBottom="@id/listTaskAct_ImportantImg"-->
+        <!--android:onClick="changePriority"-->
+        <!--android:layout_alignEnd="@id/listTaskAct_ImportantImg"-->
+        <!--android:id="@+id/listTaskAct_ChangePriorityBtn"/>-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.8"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/list_act_important_mark"
+        android:scaleY="0.8"
+        android:id="@+id/listTaskAct_ImportantImg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        tools:text="Pick Pisu to the zoo @ 10AM"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignTop="@id/listTaskAct_ImportantImg"
+        android:gravity="center_vertical"
+        android:layout_marginStart="7dp"
+        android:id="@+id/listTaskAct_TaskTv"
+        android:layout_alignBottom="@+id/listTaskAct_ImportantImg"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/listTaskAct_ImportantImg"/>
+
+
+
+</RelativeLayout>

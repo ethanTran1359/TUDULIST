@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/genieBlue</item>
+        <item name="colorPrimaryDark">@android:color/background_dark</item>
+        <item name="colorAccent">@android:color/background_light</item>
+    </style>
+
+    <style name="TestTheme" parent="android:Theme.Holo.Light.DarkActionBar"/>
+
+    <style name="mainSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/genieBlue</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/colorWhite</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/darkGray
+        </item>
+    </style>
+</resources>

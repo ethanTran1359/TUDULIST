@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="@color/genieBlue"
+                android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/dialog_TaskLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Task"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/dialog_TaskEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/addTaskAct_TaskLabelTv"
+        android:layout_alignBaseline="@id/dialog_TaskLabelTv"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@+id/dialog_TaskLabelTv"
+        android:ems="10"
+        android:hint="Your task"
+        android:inputType="textCapSentences"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/darkGray"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Your task"/>
+
+    <TextView
+        android:id="@+id/dialog_NotesLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dialog_TaskLabelTv"
+        android:layout_below="@+id/dialog_TaskLabelTv"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Notes"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+    android:id="@+id/dialog_NotesEdt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@id/addTaskAct_NotesLabelTv"
+    android:layout_alignBaseline="@id/dialog_NotesLabelTv"
+    android:layout_marginEnd="20dp"
+    android:layout_alignStart="@id/dialog_TaskEdt"
+    android:layout_toEndOf="@+id/dialog_NotesLabelTv"
+    android:ems="10"
+    android:inputType="textCapSentences"
+    android:paddingTop="5dp"
+    android:text=""
+    android:hint="Your task notes"
+    android:textColor="@color/darkGray"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    tools:text="Your task notes"/>
+
+    <TextView
+        android:id="@+id/dialog_MonthLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dialog_TaskLabelTv"
+        android:layout_below="@+id/dialog_NotesLabelTv"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Month"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/dialog_MonthEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/addTaskAct_NotesLabelTv"
+        android:layout_alignBaseline="@id/dialog_MonthLabelTv"
+        android:layout_marginEnd="20dp"
+        android:layout_alignStart="@id/dialog_TaskEdt"
+        android:layout_toEndOf="@+id/dialog_NotesLabelTv"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:hint="Must be short form Oct"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/darkGray"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Oct"/>
+
+    <TextView
+        android:id="@+id/dialog_DayLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dialog_TaskLabelTv"
+        android:layout_below="@+id/dialog_MonthLabelTv"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Day"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/dialog_DayEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/addTaskAct_NotesLabelTv"
+        android:layout_alignBaseline="@id/dialog_DayLabelTv"
+        android:layout_marginEnd="20dp"
+        android:layout_alignStart="@id/dialog_TaskEdt"
+        android:layout_toEndOf="@+id/dialog_NotesLabelTv"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Must be dd"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/darkGray"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="15"/>
+
+    <TextView
+    android:id="@+id/dialog_YearLabelTv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/dialog_TaskLabelTv"
+    android:layout_below="@+id/dialog_DayLabelTv"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:text="Year"
+    android:textColor="@color/colorWhite"
+    android:textSize="20sp"
+    android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/dialog_YearEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/addTaskAct_NotesLabelTv"
+        android:layout_alignBaseline="@id/dialog_YearLabelTv"
+        android:layout_marginEnd="20dp"
+        android:layout_alignStart="@id/dialog_TaskEdt"
+        android:layout_toEndOf="@+id/dialog_NotesLabelTv"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Must be yyyy"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/darkGray"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="1994"/>
+
+    <TextView
+        android:id="@+id/dialog_PriorityTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dialog_TaskLabelTv"
+        android:layout_below="@+id/dialog_YearLabelTv"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Prio"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/dialog_PriorityEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/addTaskAct_NotesLabelTv"
+        android:layout_alignBaseline="@id/dialog_PriorityTv"
+        android:layout_marginEnd="20dp"
+        android:layout_alignStart="@id/dialog_TaskEdt"
+        android:layout_toEndOf="@+id/dialog_NotesLabelTv"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:hint="Important or Low Important"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/darkGray"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Important"/>
+
+    <TextView
+        android:id="@+id/dialog_StatusTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dialog_TaskLabelTv"
+        android:layout_below="@+id/dialog_PriorityTv"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Status"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/dialog_StatusEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/addTaskAct_NotesLabelTv"
+        android:layout_alignBaseline="@id/dialog_StatusTv"
+        android:layout_marginEnd="20dp"
+        android:layout_alignStart="@id/dialog_TaskEdt"
+        android:layout_toEndOf="@+id/dialog_NotesLabelTv"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:hint="Done or Not Done"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/darkGray"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Done"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

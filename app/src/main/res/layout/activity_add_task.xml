@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_task"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/genieBlue"
+    tools:context="com.example.rubit1359.tudu.ui.AddTaskActivity">
+
+    <TextView
+        android:id="@+id/addTaskAct_TaskLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/addTaskAct_GoBtn"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Task"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/addTaskAct_ImportantLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/addTaskAct_TaskLabelTv"
+        android:layout_below="@+id/addTaskAct_DateBackgroundBtn"
+        android:layout_marginTop="25dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Mark as IMPORTANT"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/addTaskAct_TaskEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addTaskAct_TaskLabelTv"
+        android:layout_alignTop="@id/addTaskAct_TaskLabelTv"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/addTaskAct_TaskLabelTv"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/darkGray"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Cook Pisu on Sunday"/>
+
+    <View
+        android:id="@+id/addTaskAct_TaskUnderline"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/addTaskAct_TaskEdt"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0.1dp"
+        android:layout_toEndOf="@id/addTaskAct_TaskLabelTv"
+        android:background="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/addTaskAct_NotesLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/addTaskAct_ImportantLabelTv"
+        android:layout_below="@+id/addTaskAct_TaskLabelTv"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Notes"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/addTaskAct_NotesEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addTaskAct_NotesLabelTv"
+        android:layout_alignTop="@id/addTaskAct_NotesLabelTv"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/addTaskAct_NotesLabelTv"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/darkGray"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Kidnapping Warned"/>
+
+
+    <View
+        android:id="@+id/addTaskAct_NotesUnderline"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_alignEnd="@id/addTaskAct_TaskUnderline"
+        android:layout_below="@+id/addTaskAct_NotesEdt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0.1dp"
+        android:layout_toEndOf="@id/addTaskAct_NotesLabelTv"
+        android:background="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/addTaskAct_StatusLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/addTaskAct_ImportantLabelTv"
+        android:layout_below="@+id/addTaskAct_ImportantLabelTv"
+        android:layout_marginTop="30dp"
+        android:paddingTop="5dp"
+        android:text="Status"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/addTaskAct_StatusEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addTaskAct_StatusLabelTv"
+        android:layout_alignTop="@id/addTaskAct_StatusLabelTv"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/addTaskAct_NotesLabelTv"
+        android:background="@null"
+        android:ems="10"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/darkGray"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Complete"/>
+
+    <View
+        android:id="@+id/addTaskAct_StatusUnderline"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/addTaskAct_StatusEdt"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0.1dp"
+        android:layout_toEndOf="@id/addTaskAct_StatusLabelTv"
+        android:background="@color/colorWhite"/>
+
+
+    <ImageView
+        android:id="@+id/addTaskAct_GoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="addDetailedTask"
+        app:srcCompat="@drawable/go_button"/>
+
+    <ImageView
+        android:id="@+id/addTaskAct_DateBackgroundBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addTaskAct_DueDateLabelTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:scaleY="0.95"
+        android:onClick="addDueDate"
+        app:srcCompat="@drawable/add_task_act_date_background"/>
+
+    <TextView
+        android:id="@+id/addTaskAct_MonthTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addTaskAct_DateBackgroundBtn"
+        android:layout_alignStart="@id/addTaskAct_DateBackgroundBtn"
+        android:layout_alignTop="@id/addTaskAct_DateBackgroundBtn"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="35dp"
+        android:gravity="center_vertical"
+        android:text="Dec"
+        android:textAllCaps="true"
+        android:textColor="@color/darkGray"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/addTaskAct_DueDateLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Due Date"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/addTaskAct_NotesUnderline"
+        android:layout_alignStart="@+id/addTaskAct_NotesLabelTv"/>
+    <TextView
+        android:id="@+id/addTaskAct_DayTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addTaskAct_DateBackgroundBtn"
+        android:layout_alignTop="@id/addTaskAct_DateBackgroundBtn"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="22"
+        android:textColor="@color/darkGray"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/addTaskAct_YearTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addTaskAct_DateBackgroundBtn"
+        android:layout_alignTop="@id/addTaskAct_DateBackgroundBtn"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@id/addTaskAct_DayTv"
+        android:gravity="center_vertical"
+        android:text="2006"
+        android:textColor="@color/darkGray"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/addTaskAct_draftDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/addTaskAct_DueDateLabelTv"
+        android:layout_alignTop="@id/addTaskAct_DueDateLabelTv"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/addTaskAct_DueDateLabelTv"
+        android:gravity="center_vertical"
+        android:text=""
+        android:visibility="invisible"/>
+
+    <Switch
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/addTaskAct_ImportantLabelTv"
+        android:layout_alignEnd="@+id/addTaskAct_DateBackgroundBtn"
+        android:layout_alignBottom="@id/addTaskAct_ImportantLabelTv"
+        android:id="@+id/addTaskAct_ImportantSw"/>
+
+
+</RelativeLayout>

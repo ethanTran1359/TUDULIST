@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/genieBlue"
+    tools:context="com.example.rubit1359.tudu.ui.MainActivity">
+
+    <ImageView
+        android:id="@+id/mainAct_QuickTaskBackgroundImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:scaleX="0.95"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:src="@drawable/main_act_add_task_background"/>
+
+    <ImageView
+        android:id="@+id/mainAct_TuDuImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mainAct_GoBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:src="@drawable/main_act_tudu_large"/>
+
+    <ImageView
+        android:id="@+id/mainAct_AddTaskBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mainAct_TuDuImg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="openAddTask"
+        android:src="@drawable/main_act_add_button"/>
+
+    <ImageView
+        android:id="@+id/mainAct_ListTaskBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mainAct_AddTaskBtn"
+        android:layout_alignStart="@+id/mainAct_AddTaskBtn"
+        android:onClick="openListTask"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/main_act_list_button"/>
+
+    <Switch
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mainAct_QuickTaskBackgroundImg"
+        android:layout_alignTop="@id/mainAct_QuickTaskBackgroundImg"
+        android:gravity="center_vertical"
+        android:layout_marginStart="17dp"
+        android:theme="@style/mainSwitch"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_alignStart="@id/mainAct_QuickTaskBackgroundImg"
+        android:id="@+id/mainAct_ImpotantSw"/>
+
+    <EditText
+        android:id="@+id/mainAct_QuickTaskEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mainAct_QuickTaskBackgroundImg"
+        android:layout_alignEnd="@id/mainAct_QuickTaskBackgroundImg"
+        android:layout_alignStart="@id/mainAct_ImpotantSw"
+        android:layout_alignTop="@id/mainAct_QuickTaskBackgroundImg"
+        android:layout_below="@+id/mainAct_GoBtn"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="55dp"
+        android:background="@android:color/transparent"
+        android:textSize="15dp"
+        android:ems="10"
+        android:hint="@string/e_g_cook_pisu_on_sunday"
+        android:inputType="textPersonName"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text=""
+        android:textColor="@color/darkGray"
+        android:textColorHint="@color/darkGray"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/mainAct_UpdateTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:text="IMPORTANT"
+        android:textAllCaps="true"
+        android:textColor="@color/ghostWhite"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/mainAct_UpdateDividerImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mainAct_UpdateTitleTv"
+        android:layout_alignTop="@id/mainAct_UpdateTitleTv"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/mainAct_UpdateTitleTv"
+        android:src="@drawable/main_act_update_divider"/>
+
+    <TextView
+        android:id="@+id/mainAct_UpdateTaskTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mainAct_UpdateTitleTv"
+        android:layout_alignTop="@id/mainAct_UpdateTitleTv"
+        android:layout_toEndOf="@+id/mainAct_UpdateDividerImg"
+        android:gravity="center_vertical"
+        android:text="Pick Pisu to the zoo @9:30 AM"
+        android:textColor="@color/ghostWhite"
+        android:textSize="15dp"
+        android:textStyle="italic"/>
+
+    <ImageView
+        android:id="@+id/mainAct_GoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:src="@drawable/go_button"
+        android:onClick="addQuickTask"
+        android:layout_above="@+id/mainAct_QuickTaskBackgroundImg"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

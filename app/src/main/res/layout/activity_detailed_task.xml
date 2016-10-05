@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detailed_task"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rubit1359.tudu.ui.DetailedTaskActivity">
+
+    <TextView
+        android:id="@+id/detailedTaskAct_TaskLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        android:text="Task"
+        android:textAllCaps="true"
+        android:textColor="@color/genieBlue"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detailedTaskAct_DueDateLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailedTaskAct_TaskLabelTv"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:text="Due date"
+        android:textColor="@color/genieBlue"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detailedTaskAct_NotesLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailedTaskAct_DueDateLabelTv"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:text="Notes"
+        android:textColor="@color/genieBlue"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detailedTaskAct_PriorityLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailedTaskAct_NotesLabelTv"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:text="Priority"
+        android:textColor="@color/genieBlue"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/DetailedTaskAct_StatusLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailedTaskAct_PriorityLabelTv"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:text="Status"
+        android:textColor="@color/genieBlue"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detailedTaskAct_TaskTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/detailedTaskAct_TaskLabelTv"
+        android:layout_alignBottom="@+id/detailedTaskAct_TaskLabelTv"
+        android:layout_alignEnd="@+id/detailedTaskAct_DueDateTv"
+        android:padding="5dp"
+        android:paddingTop="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Pick Pisu to the zoo @ 10AM"/>
+
+    <View
+        android:id="@+id/taskUnderline"
+        android:layout_width="250dp"
+        android:layout_height="3dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/detailedTaskAct_TaskLabelTv"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/addTaskAct_TaskLabelTv"
+        android:background="@color/genieBlue"/>
+
+    <View
+        android:id="@+id/noteUnderline"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/detailedTaskAct_NotesLabelTv"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/addTaskAct_TaskLabelTv"
+        android:background="@color/darkGray"/>
+
+    <TextView
+        android:id="@+id/detailedTaskAct_PriorityTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/detailedTaskAct_PriorityLabelTv"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/detailedTaskAct_DueDateTv"
+        android:layout_marginEnd="20dp"
+        android:padding="5dp"
+        android:paddingTop="5dp"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Important"
+        />
+
+    <View
+        android:id="@+id/priorityUnderline"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/detailedTaskAct_PriorityLabelTv"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/addTaskAct_TaskLabelTv"
+        android:background="@color/darkGray"/>
+
+    <TextView
+        android:id="@+id/detailedTaskAct_StatusTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DetailedTaskAct_StatusLabelTv"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/detailedTaskAct_DueDateTv"
+        android:layout_marginEnd="20dp"
+        android:padding="5dp"
+        android:paddingTop="5dp"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Completed"
+        />
+
+    <View
+        android:id="@+id/statusUnderline"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/DetailedTaskAct_StatusLabelTv"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/addTaskAct_TaskLabelTv"
+        android:background="@color/darkGray"/>
+
+    <TextView
+        android:id="@+id/detailedTaskAct_DueDateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/detailedTaskAct_DueDateLabelTv"
+        android:layout_alignBottom="@+id/detailedTaskAct_DueDateLabelTv"
+        android:layout_alignEnd="@+id/detailedTaskAct_NotesTv"
+        android:padding="5dp"
+        android:paddingTop="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Dec / 12 / 2016"/>
+
+    <View
+        android:id="@+id/dueDateUnderline"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/detailedTaskAct_DueDateLabelTv"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/addTaskAct_TaskLabelTv"
+        android:background="@color/darkGray"/>
+
+    <TextView
+        android:id="@+id/detailedTaskAct_NotesTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/detailedTaskAct_NotesLabelTv"
+        android:layout_alignBottom="@+id/detailedTaskAct_NotesLabelTv"
+        android:layout_alignEnd="@+id/detailedTaskAct_PriorityTv"
+        android:padding="5dp"
+        android:paddingTop="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Kidnapping warned"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/detailedTaskAct_EditBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="37dp"
+            android:onClick="editTask"
+            app:srcCompat="@drawable/detailed_act_edit_btn"
+            android:layout_marginStart="85dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/detailed_act_save_btn"
+            android:id="@+id/imageView"
+            android:layout_marginEnd="85dp"
+            android:onClick="saveTask"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>
